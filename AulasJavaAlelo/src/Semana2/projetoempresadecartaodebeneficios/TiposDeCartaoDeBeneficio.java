@@ -1,12 +1,10 @@
-package projetoempresadecartaodebeneficios;
+package Semana2.projetoempresadecartaodebeneficios;
 
 public enum TiposDeCartaoDeBeneficio {
 
     VA {
         @Override
-        public InterfaceCartaoDeBeneficio fabricar() {
-            return new ValeAlimentacao();
-        }
+        public InterfaceCartaoDeBeneficio fabricar() { return new ValeAlimentacao(); }
     },
     VR {
         @Override
@@ -22,9 +20,5 @@ public enum TiposDeCartaoDeBeneficio {
     };
 
     abstract InterfaceCartaoDeBeneficio fabricar();
-
-}
-
-
 
 }
